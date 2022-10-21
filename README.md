@@ -31,4 +31,4 @@ $ npm run start:prod
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Streaming Server is [MIT licensed](LICENSE).
