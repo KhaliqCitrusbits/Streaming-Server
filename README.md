@@ -29,6 +29,7 @@
 ## Installation
 
 ```bash
+$ yarn install (Recommended)
 $ npm install
 ```
 
@@ -36,26 +37,16 @@ $ npm install
 
 ```bash
 # development
+$ yarn start (Recommended)
 $ npm run start
 
 # watch mode
+$ yarn start:dev (Recommended)
 $ npm run start:dev
 
 # production mode
+$ yarn start:prod (Recommended)
 $ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
 ## Support
