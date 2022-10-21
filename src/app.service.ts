@@ -8,7 +8,7 @@ export class AppService {
     const firstAudio =
       process.env.PWD + '/public/assets/audio/Bin-Tere-Sanam.mp3';
     const secondAudio = process.env.PWD + '/public/assets/audio/Bilionera.mp3';
-    const outputName = '/public/assets/output/Mixed-Video.m3u8';
+    const outputName = `/public/assets/output/${new Date().getTime()}.m3u8`;
     const output = process.env.PWD + outputName;
     const command = `-i ${video} -i ${firstAudio} -i ${secondAudio} -filter_complex "[1][2]amix=inputs=2[a]" -map 0:v -map "[a]" -c:v copy -bsf:v h264_mp4toannexb -start_number 0 -hls_time 10 -hls_list_size 0 -f hls ${output}`;
 
